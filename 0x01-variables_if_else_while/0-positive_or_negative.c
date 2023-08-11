@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-int main() {
-    srand(time(NULL));  // Initialize random number generator
-    
-    int n = rand() % 201 - 100;  // Generates a random number between -100 and 100
-    
+int main(void)
+{
+	int n;
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
     printf("The number %d is ", n);
     
     if (n > 0) {
@@ -17,6 +17,5 @@ int main() {
     }
     
     printf("\n");
-    
-    return 0;
+     return 0;
 }
