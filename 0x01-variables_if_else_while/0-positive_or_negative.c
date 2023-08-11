@@ -4,18 +4,15 @@
 int main(void)
 {
 	int n;
+
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-    printf("The number %d is ", n);
-    
     if (n > 0) {
-        printf("positive");
+        printf("%d is positive\n",n);
     } else if (n == 0) {
-        printf("zero");
+        printf("%d is zero\n",0);
     } else {
-        printf("negative");
-    }
-    
-    printf("\n");
-     return 0;
+        printf("%d is negative\n",n);
+   }
+    return 0;
 }
