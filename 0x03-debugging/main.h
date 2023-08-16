@@ -1,15 +1,23 @@
-#ifndef MAIN_H
+#include "main.h"
 
-#define MAIN_H
+void positive_or_negative(int i) {
+    if (i > 0) {
+        printf("%d is positive\n", i);
+    } else if (i < 0) {
+        printf("%d is negative\n", i);
+    } else {
+        printf("%d is zero\n", i);
+    }
+}
 
-#include <stdio.h>
+int largest_number(int a, int b, int c) {
+  
+}
 
-void positive_or_negative(int i);
+void print_remaining_days(int month, int day, int year) {
+    
+}
 
-int largest_number(int x, int y, int z);
-
-void print_remaining_days(int m, int d, int y);
-
-int convert_day(int m, int d);
-
-#endif
+int convert_day(int month, int day) {
+   
+}
