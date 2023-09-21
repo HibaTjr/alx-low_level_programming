@@ -6,7 +6,6 @@
  * @head: list_t list to be freed
  */
 void free_list(list_t *head)
-:wq
 {
 list_t *temp;
 
