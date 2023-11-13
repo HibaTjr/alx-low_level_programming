@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Compile each .c file into an object file
+gcc -Wall -Werror -Wextra -pedantic -fPIC -c abs.c atoi.c isalpha.c islower.c \
+    memcpy.c putchar.c strcat.c strcmp.c strlen.c strncpy.c strspn.c \
+    isdigit.c isupper.c memset.c puts.c strchr.c strcpy.c strncat.c strpbrk.c strstr.c
+
+# Create the dynamic library libdynamic.so
+gcc -shared -o libdynamic.so *.o
+
+# Clean up object files
+rm *.o
+
